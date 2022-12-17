@@ -26,13 +26,17 @@
   font-family: "Roboto-reg";
   src: url(../font/Roboto-Regular.ttf);
 }
+h1 {
+  font-size: 23px;
+  font-family: "Vk-demi";
+}
 .header {
   width: 90%;
   margin: 0 auto;
+  margin-top: 50px;
   background-color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   flex-direction: row;
   font-family: "Vk-demi";
 }
@@ -61,7 +65,7 @@
   padding: 12px 60px;
   color: #2D81E0;
   border: 1px solid #2D81E0;
-  background-color: none;
+  background-color: white;
   border-radius: 8px;
   font-family: "Roboto-med";
 }
@@ -81,4 +85,21 @@
 }
 .main .container-btn .btn-primary {
   margin-bottom: 34px;
+}
+.template-item {
+  font-family: "Roboto-reg";
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px;
+  background-color: #F2F3F5;
+  border: 1px solid #D5D6D8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.rotate {
+  transform: rotate(180deg);
 }
