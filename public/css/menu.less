@@ -1,5 +1,6 @@
 
 @color-blue: #2D81E0;
+@background-template: #F2F3F5;
 
 @font-face {
     font-family: "Vk-demi";
@@ -53,13 +54,19 @@
     font-family: "Roboto-reg";
 }
 
+h1{
+    font-size: 23px;
+    .VK-demi();
+}
+
 .header{
+    
     width: 90%;
     margin: 0 auto;
+    margin-top: 50px;
     background-color: white;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     flex-direction: row;
     .VK-demi();
     img{
@@ -88,7 +95,7 @@
     padding: 12px 60px;
     color: @color-blue;
     border: 1px solid @color-blue;
-    background-color: none;
+    background-color: white;
     border-radius: 8px;
     .Roboto-med();
 }
@@ -108,4 +115,25 @@
            }
         }
     }
+}
+
+//--------- page template
+
+.template-item{
+    .Roboto-reg();
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px;
+    background-color: @background-template;
+    border: 1px solid #D5D6D8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rotate{
+    transform: rotate(180deg);
 }
