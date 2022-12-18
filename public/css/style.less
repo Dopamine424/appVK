@@ -1,3 +1,56 @@
+@font-face {
+    font-family: "Vk-demi";
+    src: url(../font/VK\ Sans\ DemiBold\ @vk_leaks.otf);
+}
+@font-face {
+    font-family: "Vk-med";
+    src: url(../font/VK\ Sans\ Medium\ @vk_leaks.ttf);
+}
+@font-face {
+    font-family: "Roboto-black";
+    src: url(../font/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(../font/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto-light";
+    src: url(../font/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Roboto-med";
+    src: url(../font/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: "Roboto-reg";
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+.VK-demi(){
+    font-family: "Vk-demi";
+}
+.VK-med(){
+    font-family: "Vk-med";
+}
+.Roboto-black(){
+    font-family: "Roboto-black";
+}
+.Roboto-bold(){
+    font-family: "Roboto-bold";
+}
+.Roboto-light()
+{
+    font-family: "Roboto-light";
+}
+.Roboto-med(){
+    font-family: "Roboto-med";
+}
+.Roboto-reg(){
+    font-family: "Roboto-reg";
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,13 +59,17 @@
 body{
     background-color: #fafafa;
 }
+h1{
+    .VK-demi();
+    margin-left: 15px;
+}
 .header{
     height: 48px;
     background-color: white;
     h1{ 
         margin-top: 20px;
-        margin-left: 15px;
         font-size: 23px;
+        
     }
 }
 .content{
@@ -34,7 +91,8 @@ body{
         text-align: center;
         color: #818C99;
         font-size: 16px;
-        font-family: 'Roboto';
+        .Roboto-reg();
+        
     }
     .header-btn{
         cursor: pointer;
@@ -43,7 +101,10 @@ body{
         margin-bottom: 100px;
         border-radius: 8px;
         padding: 12px 20px;
+        text-decoration: none;
         background-color: #2D81E0;
+        .Roboto-med();
+        font-size: 16px;
         &:hover{   
             transition: opacity 0.3s ease-in-out; 
             opacity: 0.9;

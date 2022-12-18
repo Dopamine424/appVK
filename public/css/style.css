@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Vk-demi";
+  src: url(../font/VK\ Sans\ DemiBold\ @vk_leaks.otf);
+}
+@font-face {
+  font-family: "Vk-med";
+  src: url(../font/VK\ Sans\ Medium\ @vk_leaks.ttf);
+}
+@font-face {
+  font-family: "Roboto-black";
+  src: url(../font/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../font/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-light";
+  src: url(../font/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto-med";
+  src: url(../font/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-reg";
+  src: url(../font/Roboto-Regular.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -6,13 +34,16 @@
 body {
   background-color: #fafafa;
 }
+h1 {
+  font-family: "Vk-demi";
+  margin-left: 15px;
+}
 .header {
   height: 48px;
   background-color: white;
 }
 .header h1 {
   margin-top: 20px;
-  margin-left: 15px;
   font-size: 23px;
 }
 .content {
@@ -33,7 +64,7 @@ body {
   text-align: center;
   color: #818C99;
   font-size: 16px;
-  font-family: 'Roboto';
+  font-family: "Roboto-reg";
 }
 .content .header-btn {
   cursor: pointer;
@@ -42,7 +73,10 @@ body {
   margin-bottom: 100px;
   border-radius: 8px;
   padding: 12px 20px;
+  text-decoration: none;
   background-color: #2D81E0;
+  font-family: "Roboto-med";
+  font-size: 16px;
 }
 .content .header-btn:hover {
   transition: opacity 0.3s ease-in-out;
